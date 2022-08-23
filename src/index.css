@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@layer base {
+  body {
+    @apply font-[Roboto] bg-gray-200
+  }
+
+  li {
+    @apply p-1
+  }
+
+  label {
+    @apply mb-3 text-lg mx-10
+  }
+
+  input {
+    @apply text-lg mb-6 border rounded-md p-2 mx-10 bg-gray-100
+  }
+
+  h1 {
+    @apply text-xl
+  }
+
+  select {
+    @apply p-2 rounded-md mx-10 bg-gray-100 mb-3
+  }
+
+  textarea {
+    @apply rounded-md border mb-6 mx-10 p-2 bg-gray-100
+  }
+
+  button {
+    @apply duration-300
+  }
+
+}
