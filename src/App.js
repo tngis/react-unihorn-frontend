@@ -2,7 +2,6 @@ import React from "react";
 import CreateJob from "./pages/CreateJob";
 import JobDetail from "./pages/JobDetail";
 import Footer from "./components/Footer";
-import Modal from "./components/Modal";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import ClientPanel from "./pages/ClientPanel";

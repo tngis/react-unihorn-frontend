@@ -3,16 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Card() {
   return (
-    <Link to='jobs'>
-      <div>
-        <div className='bg-white border rounded-md p-4 pb-32 cursor-pointer shadow-lg hover:-translate-y-1 duration-300'>
-          <h1>Title</h1>
-          <p>Discription</p>
-          <p>Payment</p>
-          <p>Max</p>
-        </div>
+    <div>
+      <div className='relative backdrop-blur-sm bg-white/10  mb-5 rounded-md p-4 h-48 duration-150'>
+        <Link to='jobs'><button className='absolute right-5 bottom-5 text-md font-semibold bg-[#FBDCC4] text-[#222831] py-1 px-4 rounded-lg hover:bg-[#58182d] hover:text-[#FBDCC4]'>DETAIL</button></Link>
       </div>
-    </Link>
+    </div>
   )
 }
 

@@ -1,21 +1,33 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { GiUnicorn } from 'react-icons/gi'
 import { motion } from "framer-motion";
 
 function Landing() {
 
 
   return (
-    <div className='fixed inset-0 flex justify-center items-center -z-50 bg-gradient-to-t from-[#311D3F] to-[#E23E57]'>
-      <div className='absolute left-5 top-5 text-white font-semibold'>
-        <h1 className='text-3xl'>UNIHORN.</h1>
+    <div>
+      <div className='fixed pb-10 inset-0 -z-50 bg-gradient-to-t from-[#311D3F] to-[#b43550]'>
+        <div className='flex inset-0 fixed flex-col justify-center items-center pb-20'>
+          <div className='flex items-center mb-10 text-[#FBDCC4]'>
+            <GiUnicorn className='w-20 h-20 rounded-xl mr-2' />
+            <h2 className='text-5xl mt-6 font-["Permanent_Marker"]'>Unihorn</h2>
+          </div>
+          <div>
+            <h1 className='text-[#FBDCC4] text-8xl mb-20 font-["Permanent_Marker"]'>EVOLANCER</h1>
+          </div>
+          <div >
+            <button className='font-semibold rounded-md p-4 mr-4 border-2 border-[#c73953] text-[#FBDCC4] bg-[#c73953] hover:bg-opacity-70'>CONNECT METAMASK</button>
+            <Link to='/Home'><button className='font-semibold rounded-md p-4 ml-4 border-2 border-[#FBDCC4] text-[#FBDCC4] hover:backdrop-blur hover:bg-white/10'>ENTER</button></Link>
+          </div>
+        </div >
+
       </div>
-      <Link to='home'><motion.div
-      ><div >
-          <h1 className='backdrop-blue-sm bg-black/30 text-white cursor-pointer w-96 py-5 text-center font-semibold text-5xl rounded-xl'>Get started</h1>
-        </div></motion.div>
-      </Link>
-    </div >
+      <footer className='fixed bottom-0 z-50 h-20 w-full'>
+        <div></div>
+      </footer>
+    </div>
   )
 }
 

@@ -3,22 +3,21 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 @layer base {
   body {
     @apply font-[Roboto] bg-gray-200
   }
 
-  li {
-    @apply p-1
-  }
 
   label {
     @apply mb-3 text-lg mx-10
   }
 
   input {
-    @apply text-lg mb-6 border rounded-md p-2 mx-10 bg-gray-100
+    @apply text-lg mb-6 rounded-md p-2 mx-10 bg-gray-100
   }
 
   h1 {
@@ -30,11 +29,11 @@
   }
 
   textarea {
-    @apply rounded-md border mb-6 mx-10 p-2 bg-gray-100
+    @apply rounded-md mb-6 mx-10 p-2 bg-gray-100
   }
 
   button {
-    @apply duration-300
+    @apply duration-150
   }
 
 }

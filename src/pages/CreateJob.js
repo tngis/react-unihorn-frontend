@@ -15,36 +15,57 @@ function CreateJob() {
 
   return (
 
-    <div className='justtify-center items-center flex fixed inset-0 bg-gray-200 md:px-10'>
+    <div className='justtify-center items-center flex fixed inset-0 bg-[#222831] md:px-10'>
       <div className='relative w-auto mx-auto max-w-8xl sm:shadow-2xl rounded-xl'>
         <div className='flex justify-center'>
-          <div className='bg-cover rounded-xl text-[#88304E]'>
-            <form className='bg-white/90 backdrop-blur-sm  border-0 sm:rounded-r-xl sm:rounded-l-xl lg:rounded-r-none relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'>
+          <div className='bg-cover rounded-xl text-[#58182d]'>
+            <form className='bg-[#FBDCC4] backdrop-blur-sm  border-0 sm:rounded-r-xl sm:rounded-l-xl lg:rounded-r-none relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'>
               <h1 className='text-center text-4xl mb-10'>Create Job</h1>
               <label>Title:</label>
-              <input className='border ' type="text" placeholder='Enter title...' />
+              <input
+                className='placeholder-[#58182d6e] backdrop-blur-sm bg-white/50'
+                type="text"
+                placeholder='Enter title...' />
               <label>Discription:</label>
-              <textarea className='border ' placeholder='Enter discription...' name="discription" id="discription" cols="lg:50" rows="4"></textarea>
+              <textarea
+                className='placeholder-[#58182d6e] backdrop-blur-sm bg-white/50'
+                placeholder='Enter discription...'
+                name="discription"
+                id="discription"
+                cols="lg:50" rows="4">
+              </textarea>
               <div className='grid grid-cols-2'>
                 <label>Payment:</label>
-                <input className='mb-3 text-sm border ' placeholder='Set payment' type="text" />
+                <input
+                  className='placeholder-[#58182d6e] mb-3 text-sm backdrop-blur-sm bg-white/50'
+                  placeholder='Set payment'
+                  type="text" />
 
                 <label>Choose catagory:</label>
-                <select className='border ' name="catagory" id="catagory" size='1'>
+                <select
+                  className='backdrop-blur-sm bg-white/50 text-[#58182d6e] '
+                  name="catagory"
+                  id="catagory"
+                  size='1'>
                   <option value="" selected disabled>Choose catagory</option>
                   <option value="">hha</option>
                 </select>
                 <label>Max lancer:</label>
-                <input className='text-sm border p-2 rounded-md ' type="number" min='1' value={lancer} onChange={e => setLancer(e.target.value)} />
+                <input
+                  className='backdrop-blur-sm bg-white/50 text-[#58182d6e] text-sm p-2 rounded-md '
+                  type="number"
+                  min='1'
+                  value={lancer}
+                  onChange={e => setLancer(e.target.value)} />
               </div>
               <div className='grid grid-cols-2 gap-5 px-10 pt-10 pb-16'>
-                <button onClick={handleClick} className='w-full border border-[#88304E] rounded-md py-2  hover:-translate-y-1'>Cancel</button>
-                <button className='w-full bg-[#88304E] text-white rounded-md py-2  hover:-translate-y-1' type="button"
+                <button onClick={handleClick} className='w-full border border-[#58182d] uppercase font-semibold hover:opacity-60 rounded-md py-2'>Cancel</button>
+                <button className=' w-full uppercase font-semibold bg-[#58182d] text-[#FBDCC4] rounded-md py-2 hover:opacity-80' type="button"
                   onClick={() => setShowModal(true)}>Create</button>
               </div>
             </form>
           </div>
-          <div className=' bg-[url("./img/3.png")] bg-no-repeat bg-center bg-cover lg:w-[250px] xl:w-[450px] 2xl:[550px] rounded-r-xl shadow-2xl'>
+          <div className=' bg-no-repeat bg-center bg-cover lg:w-[250px] xl:w-[450px] 2xl:[550px] rounded-r-xl'>
           </div>
         </div>
       </div>
@@ -55,9 +76,9 @@ function CreateJob() {
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#FBDCC4] outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                <div className="flex items-start justify-between p-5 border-b border-[#58182d3f] rounded-t">
                   <h3 className="text-pink-800 text-3xl">
                     Create job?
                   </h3>
@@ -72,12 +93,12 @@ function CreateJob() {
                 </div>
                 {/*body*/}
                 <div className="relative px-10 flex-auto">
-                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                  <p className="my-4 text-[#58182d75] text-lg leading-relaxed">
                     Your job will be posted on the job board
                   </p>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end px-6 py-3 border-t border-solid border-slate-200 rounded-b">
+                <div className="flex items-center justify-end px-6 py-3 rounded-b">
                   <button
                     className="text-pink-800 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
