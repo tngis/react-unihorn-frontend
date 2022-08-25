@@ -100,15 +100,15 @@ function CreateJob() {
           </div>
         </div>
       </div>
-      {showModal ? (
+     {/* {showModal ? (
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              {/*content*/}
+ 
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#FBDCC4] outline-none focus:outline-none">
-                {/*header*/}
+         
                 <div className="flex items-start justify-between p-5 border-b border-[#58182d3f] rounded-t">
                   <h3 className="text-pink-800 text-3xl">
                     Create job?
@@ -122,13 +122,13 @@ function CreateJob() {
                     </span>
                   </button>
                 </div>
-                {/*body*/}
+             
                 <div className="relative px-10 flex-auto">
                   <p className="my-4 text-[#58182d75] text-lg leading-relaxed">
                     Your job will be posted on the job board
                   </p>
                 </div>
-                {/*footer*/}
+           
                 <div className="flex items-center justify-end px-6 py-3 rounded-b">
                   <button
                     className="text-pink-800 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -150,8 +150,10 @@ function CreateJob() {
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
-      ) : null}
+      ) : null} 
+       */}
     </div>
+
   )
 }
 
