@@ -1,10 +1,10 @@
 import React from 'react'
-import TopJobs from './TopJobs'
-import TopLancers from './TopLancers'
+import TopJobs from '../Home/TopJobs'
+import TopLancers from '../Home/TopLancers'
 
-function NavbarRightCol() {
+function RightNav() {
   return (
-    <div className='fixed top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-45rem))] w-[19.5rem] pb-10 px-8 overflow-y-auto hidden xl:block'>
+    <div className='fixed -z-10 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-45rem))] w-[19.5rem] pb-10 px-8 overflow-y-auto hidden xl:block'>
       <div className='sticky top-0 -ml-0.5 pointer-events-none py-10 bg-[#0c0f13]'>
         {/* <select className='w-full relative pointer-events-auto bg-[#58182d] p-2 m-0'>
           <option value="">Last week</option>
@@ -42,4 +42,4 @@ function NavbarRightCol() {
   )
 }
 
-export default NavbarRightCol
+export default RightNav

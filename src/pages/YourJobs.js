@@ -1,8 +1,8 @@
 import React from 'react'
 import Nav from '../components/Yourjobs/Nav'
-import NavbarRightCol from '../components/Home/NavbarRightCol';
+import RightNav from '../components/Yourjobs/RightNav';
 import JobList from '../components/Yourjobs/JobList';
-import Lancers from '../components/Yourjobs/Lancers';
+import LancersList from '../components/Yourjobs/LancersList';
 
 function YourJobs() {
   return (
@@ -15,10 +15,10 @@ function YourJobs() {
           </div>
           <div className='border-pink-800 fixed inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] max-w-6xl w-full right-auto pb-10 px-8 flex'>
             <JobList />
-            <Lancers />
+            <LancersList />
           </div>
         </div>
-        <NavbarRightCol />
+        <RightNav />
       </div>
       <div className="fixed inset-0 -z-40 bg-[#0c0f13]"></div>
     </div>
