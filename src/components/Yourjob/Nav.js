@@ -16,7 +16,7 @@ function Nav() {
             {/* <input className='m-0 text-black hidden md:block border rounded-lg px-2 py-1.5 lg:w-[340px] xl:w-[550px]' type="text" placeholder='Search...' /> */}
             <div className='flex items-center'>
               <AiOutlineSearch className='cursor-pointer text-2xl mr-5 md:hidden block w-6 h-6' />
-              <div><Link to="/your-job"><button className=' mr-4 text-sm uppercase font-semibold hover:text-[#58182d]'>Your jobs</button></Link></div>
+              <div><Link to="/home"><button className=' mr-4 text-sm uppercase font-semibold hover:text-[#58182d]'>Home</button></Link></div>
               <div><Link to="/create-job"><button className='mr-4 text-sm uppercase font-semibold  hover:text-[#58182d] duration-150'>Create job</button></Link></div>
               <button className='text-[#FBDCC4] bg-[#58182d] text-sm uppercase font-semibold py-2 px-3 rounded-xl hover:shadow-[0_5px_0_0_rgba(0,0,0,0.3)] hover:bg-pink-800 hover:text-[#FBDCC4] duration-150'>Connect Metamask</button>
             </div>
