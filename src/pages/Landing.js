@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { GiUnicorn } from 'react-icons/gi'
-import { motion } from "framer-motion";
 
 function Landing() {
 
