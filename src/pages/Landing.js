@@ -1,8 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { GiUnicorn } from 'react-icons/gi'
+import { BsFillTriangleFill } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 function Landing() {
+  const blockVariants = {
+    initial: {
+      y: -50,
+    },
+    target: {
+      y: -20,
+    },
+  }
 
 
   return (
@@ -23,10 +33,27 @@ function Landing() {
         </div >
 
       </div>
-      <footer className='fixed bottom-0 z-50 h-20 w-full'>
-        <div></div>
-      </footer>
-    </div>
+      <motion.div
+        variants={blockVariants}
+        initial="initial"
+        animate="target"
+        transition={{
+          ease: 'easeInOut',
+          duration: 0.7,
+          delay: 0,
+          repeat: Infinity,
+          repeatType: 'mirror',
+          repeatDelay: 0,
+        }}
+        className='flex items-center flex-col absolute inset-x-0 bottom-0 text-[#FBDCC4]'>
+        <div className='uppercase font-semibold'>
+          <h1 className='text-lg'>dive deeper</h1>
+        </div>
+        <BsFillTriangleFill className='w-20 h-20 relative rotate-180' />
+
+      </motion.div >
+    </div >
+
   )
 }
 

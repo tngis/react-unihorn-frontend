@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import CreateJobNav from '../components/Createjob/CreateJobNav';
 
 function CreateJob() {
   const [lancer, setLancer] = useState('1');
@@ -21,86 +22,88 @@ function CreateJob() {
 
 
   return (
-
-    <div className='justtify-center items-center flex fixed inset-0 bg-[#FBDCC4] md:px-10'>
-      <div className='relative w-auto mx-auto max-w-8xl sm:shadow-2xl rounded-xl'>
-        <div className='flex justify-center'>
-          <div className='bg-cover rounded-xl text-white'>
-            <form
-              onSubmit={handleSubmit}
-              className='bg-[#0c0f13] backdrop-blur-sm  border-0 sm:rounded-r-xl sm:rounded-l-xl lg:rounded-r-none relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'
-            >
-              <h1 className='text-center text-4xl mb-10'>Create Job</h1>
-              <label>Title:</label>
-              <input
-                className='placeholder-[#58182d6e] backdrop-blur-sm bg-white/50'
-                type="text"
-                placeholder='Enter title...'
-                value={title}
-                onChange={(e) => { setTitle(e.target.value) }}
-                required
-              />
-              <label>Description:</label>
-              <textarea
-                className='placeholder-[#58182d6e] backdrop-blur-sm bg-white/50'
-                placeholder='Enter description...'
-                name="description"
-                id="description"
-                cols="lg:50"
-                rows="4"
-                value={description}
-                onChange={(e) => { setDescription(e.target.value) }}
-                required
+    <div className='text-[#FBDCC4]'>
+      <CreateJobNav />
+      <div className='justify-center items-center flex fixed inset-0 bg-[#0c0f13] md:px-10'>
+        <div className='relative w-auto mx-auto max-w-8xl sm:shadow-2xl rounded-xl'>
+          <div className='flex justify-center'>
+            <div className='bg-cover rounded-xl text-[#FBDCC4]'>
+              <form
+                onSubmit={handleSubmit}
+                className='bg-white/10 backdrop-blur-sm sm:rounded-xl relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'
               >
-              </textarea>
-              <div className='grid grid-cols-2'>
-                <label>Payment:</label>
+                <h1 className='text-center font-semibold uppercase text-4xl mb-10'>Create Job</h1>
+                <label>Title:</label>
                 <input
-                  className='placeholder-[#58182d6e] mb-3 text-sm backdrop-blur-sm bg-white/50'
-                  placeholder='Set payment'
-                  type=""
-                  onChange={(e) => { setPayment(e.target.value) }}
-                  value={payment}
-                  required />
-
-                <label>Choose catagory:</label>
-                <select
-                  className='backdrop-blur-sm bg-white/50 '
-                  name="catagory"
-                  id="catagory"
-                  size='1'
-                  value={category}
-                  onChange={(e) => { setCategory(e.target.value) }}
-                >
-                  <option value="Mario">Mario</option>
-                  <option value="Yoshi">Yoshi</option>
-                  <option value="Luigi">Luigi</option>
-                  <option value="Wario">Wario</option>
-                </select>
-                <label>Max lancer:</label>
-                <input
-                  className='backdrop-blur-sm bg-white/50 text-sm p-2 rounded-md '
-                  type="number"
-                  min='1'
-                  value={lancer}
-                  onChange={e => setLancer(e.target.value)}
+                  className='placeholder-[#fbdcc473] bg-[#FBDCC4]/10'
+                  type="text"
+                  placeholder='Enter title...'
+                  value={title}
+                  onChange={(e) => { setTitle(e.target.value) }}
+                  required
                 />
-              </div>
-              <div className='grid grid-cols-2 gap-5 px-10 pt-10 pb-16'>
-                <button onClick={handleClick} className='w-full border border-[#58182d] uppercase font-semibold hover:opacity-60 rounded-md py-2'>Cancel</button>
-                {/* <button className=' w-full uppercase font-semibold bg-[#58182d] text-[#FBDCC4] rounded-md py-2 hover:opacity-80' type="button"
-                  onClick={() => setShowModal(true)}>Create</button> */}
-                <button className=' w-full uppercase font-semibold bg-[#58182d] text-[#FBDCC4] rounded-md py-2 hover:opacity-80' type="submit"
-                >Create</button>
-              </div>
+                <label>Description:</label>
+                <textarea
+                  className='placeholder-[#fbdcc473]  bg-[#FBDCC4]/10'
+                  placeholder='Enter description...'
+                  name="description"
+                  id="description"
+                  cols="lg:50"
+                  rows="4"
+                  value={description}
+                  onChange={(e) => { setDescription(e.target.value) }}
+                  required
+                >
+                </textarea>
+                <div className='grid grid-cols-2'>
+                  <label>Payment:</label>
+                  <input
+                    className='placeholder-[#fbdcc473] mb-3 text-sm bg-[#FBDCC4]/10'
+                    placeholder='Set payment'
+                    type="text"
+                    onChange={(e) => { setPayment(e.target.value) }}
+                    value={payment}
+                    required />
 
-            </form>
-          </div>
-          <div className=' bg-no-repeat bg-center bg-cover lg:w-[250px] xl:w-[450px] 2xl:[550px] rounded-r-xl'>
+                  <label>Choose catagory:</label>
+                  <select
+                    className=' bg-[#FBDCC4]/10'
+                    name="catagory"
+                    id="catagory"
+                    size='1'
+                    value={category}
+                    onChange={(e) => { setCategory(e.target.value) }}
+                  >
+                    <option value="Mario">Mario</option>
+                    <option value="Yoshi">Yoshi</option>
+                    <option value="Luigi">Luigi</option>
+                    <option value="Wario">Wario</option>
+                  </select>
+                  <label>Max lancer:</label>
+                  <input
+                    className=' bg-[#FBDCC4]/10 text-sm p-2 rounded-md '
+                    type="text"
+                    min='1'
+                    value={lancer}
+                    style={{}}
+                    onChange={e => setLancer(e.target.value)}
+                  />
+                </div>
+                <div className='grid grid-cols-2 gap-5 px-10 pt-10 pb-16'>
+                  <button onClick={handleClick} className='w-full border-2 border-[#FBDCC4] uppercase font-semibold hover:opacity-60 rounded-md py-2 opacity-60'>Cancel</button>
+                  {/* <button className=' w-full uppercase font-semibold bg-[#58182d] text-[#FBDCC4] rounded-md py-2 hover:opacity-80' type="button"
+                  onClick={() => setShowModal(true)}>Create</button> */}
+                  <button className='w-full uppercase font-semibold bg-[#7c1f3e] border-2 border-[#7c1f3e] text-[#ffe5d2] rounded-md py-2 hover:bg-opacity-80' type="submit"
+                  >Create</button>
+                </div>
+
+              </form>
+            </div>
+            {/* <div className=' bg-no-repeat bg-center bg-cover lg:w-[250px] xl:w-[450px] 2xl:[550px] rounded-r-xl'>
+          </div> */}
           </div>
         </div>
-      </div>
-      {/* {showModal ? (
+        {/* {showModal ? (
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -152,8 +155,8 @@ function CreateJob() {
         </>
       ) : null} 
        */}
+      </div>
     </div>
-
   )
 }
 
