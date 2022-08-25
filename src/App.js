@@ -4,7 +4,7 @@ import JobDetail from "./pages/JobDetail";
 import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
-import YourJob from "./pages/YourJob";
+import YourJobs from "./pages/YourJobs";
 
 import {
   BrowserRouter,
@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
 
       <Routes>
-        <Route path='/your-job' element={<YourJob />} />
+        <Route path='/your-job' element={<YourJobs />} />
         <Route path='/create-job' element={<CreateJob />} />
         <Route path='/home/jobs' element={<JobDetail />} />
         <Route path='/home' element={<Home />} />
