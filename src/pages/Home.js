@@ -4,8 +4,6 @@ import NavbarAdd from '../components/Home/NavbarAdd'
 import NavbarLeftCol from '../components/Home/NavbarLeftCol'
 import NavbarRightCol from '../components/Home/NavbarRightCol'
 import Jobs from '../components/Home/Jobs'
-import Card from '../components/Card'
-import { Link } from 'react-router-dom'
 
 function Home() {
   return (
