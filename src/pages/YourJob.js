@@ -1,8 +1,8 @@
 import React from 'react'
+import Nav from '../components/Yourjob/Nav'
 import { useNavigate } from 'react-router-dom';
 
-function ClientPanel() {
-
+function YourJob() {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -10,11 +10,9 @@ function ClientPanel() {
   };
   return (
     <div>
-      <div>
-
-      </div>
+      <Nav />
     </div>
   )
 }
 
-export default ClientPanel
+export default YourJob

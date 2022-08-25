@@ -4,7 +4,7 @@ import JobDetail from "./pages/JobDetail";
 import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
-import ClientPanel from "./pages/ClientPanel";
+import YourJob from "./pages/YourJob";
 
 import {
   BrowserRouter,
@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
 
       <Routes>
-        <Route path='/your-job' element={<ClientPanel />} />
+        <Route path='/your-job' element={<YourJob />} />
         <Route path='/create-job' element={<CreateJob />} />
         <Route path='/home/jobs' element={<JobDetail />} />
 

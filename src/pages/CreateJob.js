@@ -15,11 +15,11 @@ function CreateJob() {
 
   return (
 
-    <div className='justtify-center items-center flex fixed inset-0 bg-[#222831] md:px-10'>
+    <div className='justtify-center items-center flex fixed inset-0 bg-[#FBDCC4] md:px-10'>
       <div className='relative w-auto mx-auto max-w-8xl sm:shadow-2xl rounded-xl'>
         <div className='flex justify-center'>
-          <div className='bg-cover rounded-xl text-[#58182d]'>
-            <form className='bg-[#FBDCC4] backdrop-blur-sm  border-0 sm:rounded-r-xl sm:rounded-l-xl lg:rounded-r-none relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'>
+          <div className='bg-cover rounded-xl text-white'>
+            <form className='bg-[#0c0f13] backdrop-blur-sm  border-0 sm:rounded-r-xl sm:rounded-l-xl lg:rounded-r-none relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'>
               <h1 className='text-center text-4xl mb-10'>Create Job</h1>
               <label>Title:</label>
               <input

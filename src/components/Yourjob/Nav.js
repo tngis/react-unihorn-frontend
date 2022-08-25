@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Navbar() {
+function Nav() {
 
 
 
@@ -27,4 +27,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Nav
