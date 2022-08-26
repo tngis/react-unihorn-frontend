@@ -9,7 +9,7 @@ function LancerProfileModal({ showModal, setShowModal }) {
           className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
         >
           <div className='max-w-4xl w-full relative'>
-            <div className='bg-white/40 backdrop-blur w-full h-[600px] rounded-xl'>
+            <div className='bg-white/30 backdrop-blur-2xl w-full h-[600px] rounded-xl'>
 
             </div>
             <div className='absolute top-3 right-3'>

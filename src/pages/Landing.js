@@ -46,10 +46,10 @@ function Landing() {
           repeatDelay: 0,
         }}
         className='flex items-center flex-col absolute inset-x-0 bottom-0 text-[#FBDCC4]'>
-        <div className='uppercase font-semibold'>
+        <div className='cursor-pointer uppercase font-semibold'>
           <h1 className='text-lg'>dive deeper</h1>
         </div>
-        <BsFillTriangleFill className='w-20 h-20 relative rotate-180' />
+        <BsFillTriangleFill className='cursor-pointer w-20 h-20 relative rotate-180' />
 
       </motion.div >
     </div >
