@@ -1,5 +1,6 @@
 import { AiOutlineSearch } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import ProfileBtn from '../ProfileBtn';
 
 
 
@@ -18,7 +19,7 @@ function Nav() {
               <AiOutlineSearch className='cursor-pointer text-2xl mr-5 md:hidden block w-6 h-6' />
               <div><Link to="/home"><button className=' mr-4 text-sm uppercase font-semibold hover:text-[#58182d]'>Home</button></Link></div>
               <div><Link to="/create-job"><button className='mr-4 text-sm uppercase font-semibold  hover:text-[#58182d] duration-150'>Create job</button></Link></div>
-              <button className='text-[#FBDCC4] bg-[#58182d] text-sm uppercase font-semibold py-2 px-3 rounded-xl hover:shadow-[0_5px_0_0_rgba(0,0,0,0.3)] hover:bg-pink-800 hover:text-[#FBDCC4] duration-150'>Connect Metamask</button>
+              <ProfileBtn />
             </div>
           </div>
         </div>

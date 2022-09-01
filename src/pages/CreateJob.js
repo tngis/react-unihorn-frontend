@@ -8,7 +8,7 @@ function CreateJob() {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [payment, setPayment] = useState(0)
-  const [category, setCategory] = useState('Mario')
+  const [category, setCategory] = useState('')
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -24,13 +24,13 @@ function CreateJob() {
   return (
     <div className='text-[#FBDCC4]'>
       <CreateJobNav />
-      <div className='justify-center items-center flex fixed inset-0 bg-[#0c0f13] md:px-10'>
-        <div className='relative w-auto mx-auto max-w-8xl sm:shadow-2xl rounded-xl'>
+      <div className='justify-center items-center flex fixed inset-0 bg-[#0c0f13]'>
+        <div className='relative w-auto mx-auto max-w-2xl sm:shadow-2xl rounded-xl'>
           <div className='flex justify-center'>
             <div className='bg-cover rounded-xl text-[#FBDCC4]'>
               <form
                 onSubmit={handleSubmit}
-                className='bg-white/10 backdrop-blur-sm sm:rounded-xl relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-10  pt-16'
+                className='bg-white/10 backdrop-blur-sm sm:rounded-xl relative flex flex-col w-full  outline-none focus:outline-none sm:px-8 lg:px-8  pt-16'
               >
                 <h1 className='text-center font-semibold uppercase text-4xl mb-10'>Create Job</h1>
                 <label>Title:</label>
@@ -48,7 +48,7 @@ function CreateJob() {
                   placeholder='Enter description...'
                   name="description"
                   id="description"
-                  cols="lg:50"
+                  cols="lg:40"
                   rows="4"
                   value={description}
                   onChange={(e) => { setDescription(e.target.value) }}
@@ -74,10 +74,14 @@ function CreateJob() {
                     value={category}
                     onChange={(e) => { setCategory(e.target.value) }}
                   >
-                    <option value="Mario">Mario</option>
-                    <option value="Yoshi">Yoshi</option>
-                    <option value="Luigi">Luigi</option>
-                    <option value="Wario">Wario</option>
+                    <option value="" selected>Category</option>
+                    <option value="">Front-end web development</option>
+                    <option value="">Back-end web development</option>
+                    <option value="">Full-stack web development</option>
+                    <option value="">Web designer</option>
+                    <option value="">Web programmer</option>
+                    <option value="">Content developer</option>
+                    <option value="">Webmaster</option>
                   </select>
                   <label>Max lancer:</label>
                   <input
@@ -93,7 +97,7 @@ function CreateJob() {
                   <button onClick={handleClick} className='w-full border-2 border-[#FBDCC4] uppercase font-semibold hover:opacity-60 rounded-md py-2 opacity-60'>Cancel</button>
                   {/* <button className=' w-full uppercase font-semibold bg-[#58182d] text-[#FBDCC4] rounded-md py-2 hover:opacity-80' type="button"
                   onClick={() => setShowModal(true)}>Create</button> */}
-                  <button className='w-full uppercase font-semibold bg-[#7c1f3e] border-2 border-[#7c1f3e] text-[#ffe5d2] rounded-md py-2 hover:bg-opacity-80' type="submit"
+                  <button onClick={handleSubmit} className='w-full uppercase font-semibold bg-[#7c1f3e] border-2 border-[#7c1f3e] text-[#ffe5d2] rounded-md py-2 hover:bg-opacity-80' type="submit"
                   >Create</button>
                 </div>
 

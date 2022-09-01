@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Card() {
+function Card(props) {
   return (
     <div>
       <div className='relative backdrop-blur-sm bg-white/10  mb-5 rounded-md p-4 h-48 duration-150'>

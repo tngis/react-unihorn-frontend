@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { GiUnicorn } from 'react-icons/gi'
 import { BsFillTriangleFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
-import ScrollUp from '../components/Landing/ScrollTop'
+import Footer from '../components/Landing/Footer'
 
 function Landing() {
 
@@ -75,13 +75,15 @@ function Landing() {
 
         </div>
         <div className='snap-center w-screen h-screen'>
-
+          <Footer />
         </div>
       </div>
-      <ScrollUp />
+      <div>
+
+      </div>
     </div >
 
   )
 }
 
-export default Landing
+export default Landing  
