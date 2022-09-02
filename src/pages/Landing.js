@@ -28,16 +28,16 @@ function Landing() {
       <div className='flex flex-col justify-center snap-center h-screen bg-gradient-to-t from-[#311D3F] to-[#b43550]'>
         <div className='flex justify-center flex-col mt-60'>
           <div className='flex flex-col justify-center items-center pb-20'>
-            <div className='flex items-center mb-10 text-[#FBDCC4]'>
-              <GiUnicorn className='w-20 h-20 rounded-xl mr-2' />
-              <h2 className='text-5xl mt-6 font-["Permanent_Marker"]'>Unihorn</h2>
+            <div className='flex items-center xl:mb-10 md:mb-8 mb-6 text-[#FBDCC4]'>
+              <GiUnicorn className='xl:w-20 lg:w-16 md:w-12 xl:h-20 lg:h-16 md:h-12 w-10 h-10 rounded-xl mr-2' />
+              <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-6 font-["Permanent_Marker"]'>Unihorn</h2>
             </div>
             <div>
-              <h1 className='text-[#FBDCC4] text-8xl mb-20 font-["Permanent_Marker"]'>EVOLANCER</h1>
+              <h1 className='text-[#FBDCC4] text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:mb-20 md:mb-16 mb-10 font-["Permanent_Marker"]'>EVOLANCER</h1>
             </div>
             <div >
-              <button className='font-semibold rounded-md p-4 mr-4 border-2 border-[#c73953] text-[#FBDCC4] bg-[#c73953] hover:bg-opacity-70'>CONNECT METAMASK</button>
-              <Link to='/Home'><button className='font-semibold rounded-md p-4 ml-4 border-2 border-[#FBDCC4] text-[#FBDCC4] hover:backdrop-blur hover:bg-white/10'>ENTER</button></Link>
+              <button className='font-semibold rounded-md p-1 md:p-2 lg:p-3 xl:p-4 xl:mr-4 lg:mr-3 mr-2 border-2 border-[#c73953] text-[#FBDCC4] bg-[#c73953] hover:bg-opacity-70'>CONNECT METAMASK</button>
+              <Link to='/Home'><button className='font-semibold p-1 md:p-2 rounded-md lg:p-3 xl:p-4 xl:ml-4 lg:ml-4 ml-2 border-2 border-[#FBDCC4] text-[#FBDCC4] hover:backdrop-blur hover:bg-white/10'>ENTER</button></Link>
             </div>
           </div >
 
@@ -58,9 +58,9 @@ function Landing() {
           className='flex items-center flex-col text-[#FBDCC4] mt-40'
           onClick={handleClick}>
           <div className='cursor-pointer uppercase font-semibold'>
-            <h1 className='text-lg'>dive deeper</h1>
+            <h1 className='xl:text-lg lg:text-sm md:text-xs text-xs'>dive deeper</h1>
           </div>
-          <BsFillTriangleFill className='cursor-pointer w-20 h-20 relative rotate-180' />
+          <BsFillTriangleFill className='cursor-pointer xl:w-20 lg:w-16 md:w-12 w-10 xl:h-20 lg:h-16 md:h-12 h-10 relative rotate-180' />
 
         </motion.div >
 

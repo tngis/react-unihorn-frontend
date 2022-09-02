@@ -10,7 +10,7 @@ function BiddingModal({ showModal, setShowModal, props }) {
 
           className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
           <div className='max-w-[450px] w-full relative '>
-            <div className='bg-white/30 backdrop-blur-2xl w-full rounded-xl flex flex-col'>
+            <div className='bg-white/30 backdrop-blur-2xl w-full sm:rounded-xl flex flex-col'>
               <h1 className='text-center text-4xl font-semibold my-10 text-[#25272b]'>BID</h1>
               <form className='flex flex-col'>
                 <label className='text-[#25272b] mb-3'>Bidding value</label>
@@ -32,8 +32,8 @@ function BiddingModal({ showModal, setShowModal, props }) {
               </div> */}
               <div className='w-full rounded-b-xl border-t mt-10 border-[#25272b79] text-[#25272b]'>
                 <div className='grid grid-cols-2'>
-                  <button className='uppercase py-4 rounded-b-xl rounded-r-none hover:bg-white/20 border-r border-[#25272b79]'>cancel</button>
-                  <button className='uppercase py-4 rounded-b-xl rounded-l-none hover:bg-white/20'>bid</button>
+                  <button className='uppercase py-4 sm:rounded-b-xl rounded-r-none hover:bg-white/20 border-r border-[#25272b79]'>cancel</button>
+                  <button className='uppercase py-4 sm:rounded-b-xl rounded-l-none hover:bg-white/20'>bid</button>
                 </div>
               </div>
             </div>
